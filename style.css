@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.conteiner {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    background-color: blue;
+    color: white;
+    padding: 12px;
+}
+header h1 {
+    font-size: bold;
+    font-style: italic;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+header li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+section img {
+    width: 380px;
+    margin: 30px;
+}
+section h2 {
+    padding-bottom: 32px;
+}
+section p {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    border-top: 1px solid blue;
+    margin-bottom: 10px;
+}
+    #perdido {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-top: 35px;
+        border-bottom: 1px solid blue;
+    }
+    section .items {
+        max-width: 1024px;
+        display: grid;
+        grid-template-columns: repeat(4, 24.33%);
+        justify-content: space-between;
+        margin: 0 auto;
+    
+    }
+    section .item img {
+        width: 200px;
+        padding-top: 30px;
+    }
+@media screen and (max-width: 767px) {
+ .conteiner {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.35em;
+ }
+ #sobre {
+    width: 375px;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 24px;
+ }
+ section .items {
+    display: block;
+    font-size: 1.25em;
+
+ }
+ section .item img {
+    width: 375px;
+    padding-top: 30px;
+    margin: 0;
+}
+header > .conteiner {
+    display: flex;
+    font-size: 1.2em;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .conteiner {
+    display: block; 
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.75em;
+}
+    #sobre {
+        width: 100%;
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+    section .items {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        justify-content: space-between;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+
+ section .item img {
+    width: 375px;
+    padding-top: 30px;
+    margin: 0;
+}
+#perdido {
+    font-size: 2.5em;
+}
+header > .conteiner {
+    display: flex;
+    font-size: 2.0em;
+}
+header ul li a {
+    font-size: 1.0em;
+}
+}
